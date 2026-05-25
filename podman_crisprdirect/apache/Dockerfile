@@ -13,6 +13,6 @@ RUN apt-get update \
 
 COPY podman_crisprdirect/apache/000-default.conf /etc/apache2/sites-available/000-default.conf
 
-ENV PERL5LIB=/var/www/html
+ENV PERL5LIB=/var/www/html:/var/www/html/detail
 
 WORKDIR /var/www/html
